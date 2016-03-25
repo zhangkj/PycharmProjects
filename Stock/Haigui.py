@@ -3,7 +3,7 @@
 import  pandas as pd
 
 #=========导入上证指数的原始数据
-index_data = pd.read_csv('indexdata/sh000001.csv', parse_dates=['date'])
+index_data = pd.read_csv('E:/mystuff/Data/all_trading_data/index data/sh000001.csv', parse_dates=['date'])
 index_data = index_data[['date', 'high', 'low', 'close', 'change']]
 index_data.sort_values(by ='date', inplace=True)
 
